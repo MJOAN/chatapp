@@ -43,20 +43,20 @@
             })
             getMessages()
         })
-        socket.on("message", addMessages)
+        socket.on("message", addMessage)
 
-            function addMessages(message) {
+            function addMessage(message) {
                 $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
             }
 
             function getMessages() {
-                $.get("http://localhost:3010/messages", (data) => {
+                $.get("http://localhost:3000/messages", (data) => {
                     data.forEach(addMessages)
                 })
             }
 
             function postMessage(message) {
-                $.post("http://localhost:3010/messages", message)
+                $.post("http://localhost:3000/messages", message)
             }
 
     </script>
