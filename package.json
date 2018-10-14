@@ -1,0 +1,31 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "chatapp friends family",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MJOAN/chatapp.git"
+  },
+  "keywords": [
+    "chat",
+    "app",
+    "mongo",
+    "node",
+    "friends"
+  ],
+  "author": "MJOAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MJOAN/chatapp/issues"
+  },
+  "homepage": "https://github.com/MJOAN/chatapp#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "socket.io": "^2.1.1"
+  }
+}
