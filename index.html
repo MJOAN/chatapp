@@ -51,7 +51,7 @@
 
             function getMessages() {
                 $.get("https://familyfriends-chatapp.herokuapp.com/messages", (data) => {
-                    data.forEach(addMessages)
+                    data.forEach(addMessage)
                 })
             }
 
